@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(edit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 50px;
+    
+}
+nav{
+    background-color: #9d8b9b;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100vw;
+}
+nav ul{  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;   
+}
+nav a:hover{
+    background-color: transparent;
+    text-decoration: none;
+    color: darkolivegreen;
+}
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 150px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s ease;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+svg{
+    fill: black;
+}
+.menubutton{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+    p{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+img {
+    width: 70px;
+    margin-top: 0;
+    height: 29px;
+    padding: 0 1rem;
+}
+.nav-container {
+    display: flex;
+    align-items: center; /* Aligns logo and menu vertically */
+    justify-content: space-between; /* Logo on left, menu on right */
+ }
+footer {
+    background-color: #252521;
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+img {
+    animation: fadeIn 2s ease-in;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+footer a {
+    color: #81c364;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    color: lightblue;  /* Changes text color */
+    text-decoration: underline;  /* Underlines the text */
+}
+p {
+    padding-top: 200px;
+    font-size: x-large;
+    text-align: left;
+    margin-left: 20px;
+    font-style: italic;
+    color: #294101;
+    
+    
+}
+
+
+
