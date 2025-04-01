@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Cardplace Designs</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <nav>
+            <div  class="nav-container">
+                <img src="CARDPLACE1.png" alt="A picture of the brand logo" width="150">
+                <ul class="sidebar">
+                
+                    <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Video editing</a></li>
+                    <li><a href="#">Graphic design</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">Motion graphics</a></li>
+                    <li><a href="#">Infographics</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="#">Video editing</a></li>
+                    <li class="hideOnMobile"><a href="#">Graphic design</a></li>
+                    <li class="hideOnMobile"><a href="#">Web development</a></li>
+                    <li class="hideOnMobile"><a href="#">Motion graphics</a></li>
+                    <li class="hideOnMobile"><a href="#">Infographics</a></li>
+                    <li class= "menubutton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>        
+        </nav>   
+        <p> Edit by day, design by night, all day!</p>
+        <footer>
+       <a href="https://www.instagram.com/_cardplace?igsh=MWpjcnRubXFycTAzZA==" target="_blank"> Instagram</a>
+       <a href="https://youtube.com/@cardplace001?si=xbuwHgWR4hNW0D5E" target="_blank"> Youtube</a>
+       <a href="mailto: cardplace254@gmail.com">Email Me</a>
+      </footer>
+      <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'
+        }
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+        }
+       </script>
+    </body>
+</html>
